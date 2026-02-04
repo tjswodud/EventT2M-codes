@@ -60,7 +60,7 @@ Download and unzip dependencies from [here](https://onedrive.live.com/?id=76593C
 
 </details>
 
-## Tranining
+## Training
 
 <details>
 
