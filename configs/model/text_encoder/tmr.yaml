@@ -1,0 +1,2 @@
+_target_: src.models.nets.text_encoder.TMRWrapperEncoder
+# path: third_packages/TMR/models/tmr_kitml_guoh3dfeats

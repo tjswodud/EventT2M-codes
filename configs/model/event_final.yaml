@@ -1,0 +1,30 @@
+defaults:
+    - default
+    - text_encoder: tmr
+    - denoiser: event_final
+    - optimizer: adamw
+    - noise_scheduler: DDPM_ori
+    - sample_scheduler: UniPC
+#    - lr_scheduler: None
+
+_target_: src.models.event_final.EventMotionGeneration
+
+text_replace_prob: 0.2
+guidance_scale: 4
+dataset_name: ${data.dataset_name}
+
+evaluator:
+  T2M_dir: ./deps/t2m_guo
+
+ocpm: false
+compile: false
+ckpt_path: ${paths.output_dir}/checkpoints
+save_every_n_epochs: 1e9
+update_every_n_epochs: 1
+
+step_num: 10 # default: 10
+
+ema:
+  use_ema: false
+  ema_decay: 0.99
+  ema_start: 1000
