@@ -36,7 +36,7 @@ class HumanML3DDataModule(LightningDataModule):
             self.data_dir = osp.join(data_dir, "HumanML3D")
         else:
             # self.data_dir = osp.join(data_dir, "KIT")
-            self.data_dir = osp.join(data_dir, "KIT-ML")
+            self.data_dir = osp.join(data_dir, "KIT-ML_event")
         self.njoints = njoints
         self.dataloader_options = {
             "num_workers": num_workers,

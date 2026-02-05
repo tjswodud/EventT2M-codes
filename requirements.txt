@@ -9,7 +9,6 @@ wandb
 rootutils 
 rich
 thop
-orjson
 
 transformers==4.42.0 
 diffusers==0.29.0 
