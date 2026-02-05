@@ -112,7 +112,7 @@ def main(args):
         data_dir = "./data/HumanML3D/"
         min_motion_length = 40
     elif args.dataset == "kit":
-        data_dir = "./data/KIT-ML-Condition/"
+        data_dir = "./data/KIT-ML/"
         min_motion_length = 24
     else:
         raise ValueError(f"{args.dataset} not supported!")
