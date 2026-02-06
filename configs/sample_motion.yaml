@@ -20,7 +20,7 @@ ckpt_path: "checkpoints/hml3d.ckpt"
 # seed for random number generators in pytorch, numpy and python.random
 seed: null
 
-data_dir: "./data/HumanML3D"
+data_dir: "./dataset/HumanML3D"
 
 save_path: "./visual_datas/"
 

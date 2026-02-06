@@ -94,7 +94,7 @@ def process(file_path):
                 f.write("\n\n")
 
 def main():
-    file_path = "./data/HumanML3D/"
+    file_path = "./dataset/HumanML3D/"
 
     process(file_path)
 

@@ -20,14 +20,14 @@ ckpt_path: "checkpoints/hml3d.ckpt"
 # seed for random number generators in pytorch, numpy and python.random
 seed: null
 
-data_dir: "./data/HumanML3D"
+data_dir: "./dataset/HumanML3D"
 
 
 repeats: 20
 
 device: "0"
 
-random_selected_file: "./data/random_selected_data.npy"
+random_selected_file: "./dataset/random_selected_data.npy"
 
 long_motion_idx: M005531
 

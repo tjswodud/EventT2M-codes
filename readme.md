@@ -22,20 +22,15 @@ pip install torch==2.2.2 torchvision==0.17.2 torchaudio==2.2.2 --index-url https
 pip install -r requirements.txt
 ```
 
-### 2. Download the datasets
+### 2. Download the original datasets
 
 We conduct experiments on the HumanML3D and KIT-ML datasets. For both datasets, you can download them by following the instructions in [here](https://github.com/EricGuo5513/HumanML3D).
 
-### 3. Download the TMR text encoder
+### 3. Preprocessing for HumanML3D-E
 
-We used [TMR](https://github.com/L-Sun/TMR/tree/370d3495c59a47340267a131f1085154bcdac7e1) as the text encoder, so the code and data must be installed.
+You can download the completed HumanML3D-E dataset from [here](https://drive.google.com/drive/folders/19mPyYV8j1vnfJ6W9tZX9758JtDUQpYop?usp=sharing).
 
-```bash
-git clone https://github.com/L-Sun/TMR.git
-cp -r TMR ./third_packages/
-```
-
-### 4. Preprocessing for HumanML3D-E
+If you want to preprocess the dataset, follow the steps below:
 
 Since an LLM (Gemini 2.5 flash) was used for HumanML3D-E data preprocessing, an API key is required.
 Please enter the issued API key on line 6 of `src/tools/data_decompose.py`.
@@ -47,6 +42,8 @@ GOOGLE_API_KEY = "" # your api key here
 ```bash
 python src/tools/data_decompose.py
 ```
+
+### 4. Setting up the TMR encoder
 
 ### 5. Preparing for training
 
