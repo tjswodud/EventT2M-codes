@@ -42,11 +42,13 @@ pip install -r requirements.txt
 
 We conduct experiments on the HumanML3D and KIT-ML datasets. For both datasets, you can download them by following the instructions in [here](https://github.com/EricGuo5513/HumanML3D).
 
-### 3. Preprocessing for HumanML3D-E
+### 3. Prepare the HumanML3D-E dataset
 
 You can download the completed HumanML3D-E dataset from [here](https://drive.google.com/drive/folders/19mPyYV8j1vnfJ6W9tZX9758JtDUQpYop?usp=sharing).
 
-If you want to preprocess the dataset, follow the steps below:
+If you want to prepare the dataset from scratch, follow the steps below:
+
+<details>
 
 Since an LLM (Gemini 2.5 flash) was used for HumanML3D-E data preprocessing, an API key is required.
 Please enter the issued API key on line 6 of `src/tools/data_decompose.py`.
@@ -58,18 +60,52 @@ GOOGLE_API_KEY = "" # your api key here
 ```bash
 python src/tools/data_decompose.py
 ```
+</details>
 
-### 4. Setting up the TMR encoder
-
-### 5. Preparing for training
+### 4. Preprocess the Datasets
 
 ```bash
 python src/tools/data_preprocess_decomposed.py --dataset hml3d
 python src/tools/data_preprocess_decomposed.py --dataset kit
 ```
 
+This will add the following files to the directory:
+```
+./dataset/HumanML3D
+├── ...
+├── data_train.npy
+├── data_val.npy
+└── data_test.npy
+```
+
+<details>
+
+Also, we have released test subsets based on the number of conditions for event-stratified evaluation.
+
+```
+./dataset/HumanML3D
+├── ...
+├── data_test_condition2.npy
+├── data_test_condition3.npy
+└── data_test_condition4.npy
+```
+</details>
+
 ### 6. Download Dependencies
 Download and unzip dependencies from [here](https://onedrive.live.com/?id=76593CF7B7FC849C%21180700&resid=76593CF7B7FC849C%21180700&e=345HR5&migratedtospo=true&redeem=aHR0cHM6Ly8xZHJ2Lm1zL3UvcyFBcHlFX0xmM1BGbDJpNE5jRThtZ1ZVTjNvWDluVFE_ZT0zNDVIUjU&cid=76593cf7b7fc849c&v=validatepermission).
+
+Download and unzip pre-trained models from [here](https://drive.google.com/drive/folders/19mPyYV8j1vnfJ6W9tZX9758JtDUQpYop?usp=sharing).
+
+```
+./
+├── checkpoints
+|   ├── hml3d.ckpt
+|   ├── kit.ckpt
+├── deps
+|   ├── glove
+|   ├── t2m_guo
+└── ...
+```
 
 </details>
 
