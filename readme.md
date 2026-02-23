@@ -20,7 +20,7 @@ The official PyTorch implementation of the paper "Event-T2M: Event-level Conditi
   </a> 
 </p>
 
-## Setting an environment
+## Setting an Environment
 
 <details>
 
@@ -38,11 +38,11 @@ pip install torch==2.2.2 torchvision==0.17.2 torchaudio==2.2.2 --index-url https
 pip install -r requirements.txt
 ```
 
-### 2. Download the original datasets
+### 2. Download the Original Datasets
 
 We conduct experiments on the HumanML3D and KIT-ML datasets. For both datasets, you can download them by following the instructions in [here](https://github.com/EricGuo5513/HumanML3D).
 
-### 3. Prepare the HumanML3D-E dataset
+### 3. Prepare the HumanML3D-E Dataset
 
 You can download the completed HumanML3D-E dataset from [here](https://drive.google.com/drive/folders/19mPyYV8j1vnfJ6W9tZX9758JtDUQpYop?usp=sharing).
 
@@ -91,7 +91,7 @@ Also, we have released test subsets based on the number of conditions for event-
 ```
 </details>
 
-### 6. Download Dependencies
+### 5. Download Dependencies and Pre-trained Models
 Download and unzip dependencies from [here](https://onedrive.live.com/?id=76593CF7B7FC849C%21180700&resid=76593CF7B7FC849C%21180700&e=345HR5&migratedtospo=true&redeem=aHR0cHM6Ly8xZHJ2Lm1zL3UvcyFBcHlFX0xmM1BGbDJpNE5jRThtZ1ZVTjNvWDluVFE_ZT0zNDVIUjU&cid=76593cf7b7fc849c&v=validatepermission).
 
 Download and unzip pre-trained models from [here](https://drive.google.com/drive/folders/19mPyYV8j1vnfJ6W9tZX9758JtDUQpYop?usp=sharing).
