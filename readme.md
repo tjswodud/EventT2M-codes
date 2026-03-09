@@ -8,9 +8,9 @@ The official PyTorch implementation of the paper "Event-T2M: Event-level Conditi
   <a href='https://arxiv.org/pdf/2602.04292' target="_blank">
   <img src='https://img.shields.io/badge/Arxiv-2602.04292-A42C25?style=flat&logo=arXiv&logoColor=A42C25'>
   </a> 
-  <!-- <a href='' target='_blank'>
+  <a href='https://openreview.net/pdf?id=mXPeXZ1KWT' target='_blank'>
   <img src='https://img.shields.io/badge/Paper-PDF-yellow?style=flat&logo=arXiv&logoColor=yellow'>
-  </a>  -->
+  </a> 
   <a href='https://tjswodud.github.io/EventT2M/' target="_blank">
   <img src='https://img.shields.io/badge/Project-Page-%23df5b46?style=flat&logo=Google%20chrome&logoColor=%23df5b46'></a> 
   <!-- <a href='https://youtu.be/PcxUzZ1zg6o'>
