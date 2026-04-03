@@ -44,7 +44,7 @@ We conduct experiments on the HumanML3D and KIT-ML datasets. For both datasets, 
 
 ### 3. Prepare the HumanML3D-E Dataset
 
-You can download the completed HumanML3D-E dataset from [here](https://drive.google.com/drive/folders/19mPyYV8j1vnfJ6W9tZX9758JtDUQpYop?usp=sharing).
+You can download the completed HumanML3D-E dataset from [here](https://drive.google.com/file/d/18cCVmCo_xM1JIUgDOe_0oSrqophAyw0m/view?usp=sharing).
 
 If you want to prepare the dataset from scratch, follow the steps below:
 
